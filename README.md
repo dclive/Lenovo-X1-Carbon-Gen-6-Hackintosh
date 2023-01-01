@@ -8,13 +8,21 @@ Again, Tyler's work.  I'm updating a few things for my convenience, and sharing 
 I've made a few changes, though: 
 
 I set ShowPicker to Yes (hence it's present in the EFI on this page) 
+
 I copied the "Vanilla" BIOS settings to the EFI (so it's present in the EFI on this page); no X1C6 BIOS mods are required
+
 I set SecureBootModel to Disabled in OCAT (so it's present... - imagine that's said for all the other bullet points) 
+
 I set ScanPolicy to Zero so all OSs will be found (take a second longer to scan; no issue for me) 
+
 I updated to OpenCore 87, the latest at this time, plus all associated KEXTs that OCAT (OpenCore Aux Tools) could update
+
 I updated YogaSMC to 1.53, the latest at this time
+
 I added the Ventura version of the pre-release airportintlwlm 2.2 (not enabled; you'd use this if you use an Intel card) 
+
 I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT is a WIP; more news in the coming days.
+
 I added ALC=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
 Oh, and I added some more logging, so it's not quite as pretty when it boots up.  To disable this, go to https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
