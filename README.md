@@ -25,10 +25,12 @@ I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT i
 
 I added ALC=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
+I added 2 .efi drivers so that you can easily add a Linux partition, install (modernLinux) onto the partition, and it will work fine and boot straight from OpenCore.  You might have to play with boot order in BIOS a bit, but the objective is OpenCore first.  
+
 Oh, and I added some more logging, so it's not quite as pretty when it boots up.  This helps a newbie in understanding what might be causing the crashing.  To disable this, go to https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
 
-And I by the act of updating to OC83, the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
+And the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
 
-Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10 and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  
+Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10 and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  X1C6 BIOS 1.59 is current (and what's tested) at this time; use it.
 
 Download as you wish.  
