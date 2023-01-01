@@ -25,7 +25,7 @@ I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT i
 
 I added ALC=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
-Oh, and I added some more logging, so it's not quite as pretty when it boots up.  To disable this, go to https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
+Oh, and I added some more logging, so it's not quite as pretty when it boots up.  This helps a newbie in understanding what might be causing the crashing.  To disable this, go to https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
 
 And I by the act of updating to OC83, the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
 
