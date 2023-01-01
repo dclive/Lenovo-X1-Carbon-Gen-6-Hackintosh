@@ -29,6 +29,6 @@ Oh, and I added some more logging, so it's not quite as pretty when it boots up.
 
 And I by the act of updating to OC83, the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
 
-Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10 and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  
+Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10 and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  
 
 Download as you wish.  
