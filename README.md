@@ -21,7 +21,7 @@ I updated YogaSMC to 1.53, the latest at this time
 
 I added the Ventura version of the pre-release airportintlwlm 2.2 (not enabled; you'd use this if you use an Intel card) 
 
-I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT is a WIP; more news in the coming days.
+I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT is a WIP; more news in the coming days.  But in Kernel/Quirks I enabled ExtendBTFeatureFlags to hopefully make the BT stuff a bit more compatible with Apple's fancy BT features, once I do get BT working.
 
 I added ALC=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
