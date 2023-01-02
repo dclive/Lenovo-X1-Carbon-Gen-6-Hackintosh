@@ -23,7 +23,7 @@ I added the Ventura version of the pre-release airportintlwlm 2.2 (not enabled; 
 
 I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT is a WIP; more news in the coming days.  But in Kernel/Quirks I enabled ExtendBTFeatureFlags to hopefully make the BT stuff a bit more compatible with Apple's fancy BT features, once I do get BT working.
 
-Do re-read the above two items; if you replaced your Intel 8265 card with a Broadcom DW1830 card, you may be fully ready to go; if you still have the Intel card in there, disable the Broadcom items and enable the Intel airportitwlm item.
+Do re-read the above two items; if you replaced your Intel 8265 card with a Broadcom DW1830 card, you may be fully ready to go; if you still have the Intel card in there, disable the Broadcom items and enable the Intel airportitwlm item, version 2.2 or later for Ventura.
 
 I added alcid=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
@@ -33,6 +33,11 @@ Oh, and I added some more logging, so it's not quite as pretty when it boots up.
 
 And the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
 
-Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10 and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  X1C6 BIOS 1.59 is current (and what's tested) at this time; use it.
+Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10, one five minute reboot, and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  X1C6 BIOS 1.59 is current (and what's tested) at this time; use it.
 
 Download as you wish.  
+
+New Notes:  (The EFI is the same, OC87)
+
+Jan 2, 2023:  OC88 works fine; use OCAT to update.  On first boot, it crashes with ACPI errors.  Poweroff the X1C6 and then power it back on and boot again with OC88; it will work fine from then onward.  Still testing OC88, but it's expected to work great.  Also, in OCAT, change the load order of PatchRam3 to be latest (and BCRCMFirmwareData to be before PatchRam3) and those two kexts can be freely enabled.  Bluetooth, however, still doesn't work reliably for me with a DW1830 in the machine.  Still investigating BT.  
+
