@@ -37,7 +37,7 @@ Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up a
 
 Download as you wish.  
 
-New Notes:  (The EFI is the same, OC87)
+**New Notes:  (The EFI is the same, OC87)**
 
-Jan 2, 2023:  OC88 works fine; use OCAT to update.  On first boot, it crashes with ACPI errors.  Poweroff the X1C6 and then power it back on and boot again with OC88; it will work fine from then onward.  Still testing OC88, but it's expected to work great.  Also, in OCAT, change the load order of PatchRam3 to be latest (and BCRCMFirmwareData to be before PatchRam3) and those two kexts can be freely enabled.  Bluetooth, however, still doesn't work reliably for me with a DW1830 in the machine.  Still investigating BT.  
+**Jan 2, 2023:**  OC88 works fine; use OCAT to update.  On first boot, it crashes with ACPI errors.  Poweroff the X1C6 and then power it back on and boot again with OC88; it will work fine from then onward.  Still testing OC88, but it's expected to work great.  Also, in OCAT, change the load order of PatchRam3 to be latest (and BCRCMFirmwareData to be before PatchRam3) and those two kexts can be freely enabled.  Bluetooth, however, still doesn't work reliably for me with a DW1830 in the machine.  Still investigating BT.  
 
