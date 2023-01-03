@@ -1,5 +1,5 @@
 # X1C6-Hack
-Based on Tyler Nguyen's work, this is his X1C6 EFI with a few additions for OC87, this EFI will permit boot of Ventura 13.1 (nothing older is tested) on a Lenovo X1 Carbon Gen 6 (BIOS 1.59, no earlier BIOS is tested).
+Based on Tyler Nguyen's work, this is his X1C6 EFI with a few additions for OC87, this EFI will permit boot of Ventura 13.1 (nothing older is tested) on a Lenovo X1 Carbon Gen 6 (BIOS 1.58, no earlier BIOS is tested).
 
 First, let's be perfectly clear:  Tyler did 99.99% of the work - the hard part.  This exists because of his work.  I'm testing with Ventura, I'm testing with OC87, and I'm testing with some more kexts, and I'm applying a few of my updates.  That's it.  The development, the ACPI stuff, the difficult stuff - that's ALL TYLER.  To see the master at work, hop over to his repository https://github.com/tylernguyen/x1c6-hackintosh and his own site https://tylernguyen.github.io/x1c6-hackintosh/.  
 
@@ -33,11 +33,11 @@ Oh, and I added some more logging, so it's not quite as pretty when it boots up.
 
 And the keyboard in OC now works after the first boot.  Previously, with OC83 and associated kexts, on the first bootup, the keyboard worked, and then after that, it didn't.  Now, with OC87, it works after each reboot. 
 
-Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10, one five minute reboot, and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  X1C6 BIOS 1.59 is current (and what's tested) at this time; use it.
+Note:  Update your X1C6 firmwares.  Lenovo's Vantage scanners will not pick up all the updates, like Intel ME.  I had to get Linux fwupdmgr to handle the additional firmwares Windows wouldn't; three minutes spent in Ubuntu 22.10, one five minute reboot, and it was done.  Ubuntu, incidently, finds all hardware perfectly, including both Intel 8265 wifi and DW1830 wifi.  X1C6 BIOS 1.58 is current (and what's tested) at this time.
 
 Download as you wish.  
 
 **New Notes:  (The EFI is the same, OC87)**
 
-**Jan 2, 2023:**  OC88 works fine; use OCAT to update.  On first boot, it crashes with ACPI errors.  Poweroff the X1C6 and then power it back on and boot again with OC88; it will work fine from then onward.  Still testing OC88, but it's expected to work great.  Also, in OCAT, change the load order of PatchRam3 to be last in load order (and BCRCMFirmwareData to be before PatchRam3) and those two kexts can be freely enabled.  Bluetooth, however, still doesn't work reliably for me with a DW1830 in the machine.  Still investigating BT.  
+**Jan 2, 2023:**  OC88 works; use OCAT to update if you wish.  On first boot, it crashes with ACPI errors.  Poweroff the X1C6 and then power it back on and boot again with OC88; it will work fine from then onward.  Still testing OC88, but it's expected to work great.  Also, in OCAT, change the load order of PatchRam3 to be last in load order (and BCRCMFirmwareData to be before PatchRam3) and those two kexts can be freely enabled.  Bluetooth, however, still doesn't work reliably for me with a DW1830 in the machine.  Still investigating BT.  **After updating to OC88, I'm not seeing the same sleep consistency (ie it's not working as well) as before. Must investigate.**
 
