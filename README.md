@@ -27,7 +27,7 @@ Do re-read the above two items; if you replaced your Intel 8265 card with a Broa
 
 I added alcid=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
-I added 2 .efi drivers so that you can easily add a Linux partition, install (modernLinux) onto the partition, and it will work fine and boot straight from OpenCore.  You might have to play with boot order in BIOS a bit, but the objective is OpenCore first.  
+I added 2 .efi drivers so that you can easily add a Linux partition, install (modernLinux) onto the partition, and it will work fine and boot straight from OpenCore.  That said, using the Lenovo EFI boot manager to boot into Linux directly is likely best-practice, since it's not going through any OpenCore-based ACPI or USB, etc. changes.  Same thought process for Windows boot - go directly to Windows Boot Manager, skip OpenCore when using those two OSs if you can.
 
 Oh, and I added some more logging, so it's not quite as pretty when it boots up.  This helps a newbie in understanding what might be causing the crashing.  To disable this, go to https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
 
