@@ -23,7 +23,7 @@ I added the Ventura version of the pre-release airportintlwlm 2.2 (not enabled; 
 
 I added a few kexts to clean up Broadcom wireless, for my Broadcom DW1830.  BT is a WIP; more news in the coming days.  But in Kernel/Quirks I enabled ExtendBTFeatureFlags to hopefully make the BT stuff a bit more compatible with Apple's fancy BT features, once I do get BT working.
 
-Do re-read the above two items; if you replaced your Intel 8265 card with a Broadcom DW1830 card, you may be fully ready to go [you'll use only 2 of the 3 antenna leads on the DW1830); if you still have the Intel card in there, disable the Broadcom items and enable the Intel airportitwlm item, version 2.2 or later for Ventura.
+Do re-read the above two items; if you replaced your Intel 8265 card with a Broadcom DW1830 card, you may be fully ready to go [you'll use only 2 of the 3 antenna leads on the DW1830]; if you still have the Intel card in there, disable the Broadcom items and enable the Intel airportitwlm item, version 2.2 or later for Ventura.
 
 I added alcid=21 to the boot args in NVRAM and updated AppleALC to 1.77 so it's compatible with Ventura
 
