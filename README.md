@@ -1,4 +1,6 @@
 # Lenovo-X1-Carbon-Gen-6-Hackintosh
+**Update 1.23.2023**:  I no longer maintain this, as I've sold off my X1 Carbon G6.  It was a good machine, but the advantages of going to M1 / M2 are so significant that I could not justify keeping the X1 Carbon any longer.  Best wishes to the community; I fully plan to keep my more current Hackintosh machines going for the immediate future.   
+
 Based on Tyler Nguyen's work, this is his X1C6 EFI with a few additions for OC87, this EFI will permit boot of Ventura 13.1 (nothing older is tested) on a Lenovo X1 Carbon Gen 6 (BIOS 1.58, no earlier BIOS is tested).
 
 First, let's be perfectly clear:  Tyler did 99.99% of the work - the hard part.  This exists because of his work.  I'm testing with Ventura, I'm testing with OC87, and I'm testing with some more kexts, and I'm applying a few of my updates.  That's it.  The development, the ACPI stuff, the difficult stuff - that's ALL TYLER.  To see the master at work, hop over to his repository https://github.com/tylernguyen/x1c6-hackintosh and his own site https://tylernguyen.github.io/x1c6-hackintosh/.  
